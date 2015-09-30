@@ -59,12 +59,14 @@ sudo mkdir -p /var/run/kubernetes
 ```
 
 Copy certs
-
+(Note that this is slightly less than ideal from a security perspective, we should create a separate CA for this. But for simplicity, we're using this)
 ```
 sudo cp apiserver-key.pem apiserver.pem ca.pem ca-key.pem /var/lib/kubernetes/
 ```
 
 Create the Kubernetes controller pod manifest:
+
+LOOKIE HERE - THIS IS A SAMPLE POD MANIFEST
 
 ```
 curl -O https://storage.googleapis.com/configs.kuar.io/kube-controller-pod.yaml

@@ -30,6 +30,8 @@ Review the docker unit file.
 cat docker.service
 ```
 
+You should NOT see docker0 in ifconfig at this point.
+
 Copy the docker unit file into place.
 
 ```

@@ -18,6 +18,8 @@ curl -O https://storage.googleapis.com/configs.kuar.io/apiserver-csr.json
 
 ### Customize apiserver-csr.json
 
+This is a cool feature, since we can't see our external IP using ifconfig or ip addr show, we can query the metadata service to get this. Yay, cloud!
+
 Get the PROJECT_ID:
 
 ```

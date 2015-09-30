@@ -5,6 +5,8 @@
 
 ## Send the Canary
 
+NOTICE the label "app=inspector". This is all that's required to be recognized as the same service??
+
 ```
 kubectl run inspector-canary \
   --labels="app=inspector,track=canary" \
